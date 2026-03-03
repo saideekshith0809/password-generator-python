@@ -7,7 +7,9 @@ use_upper = input("Include Uppercase? (y/n): ").lower() == 'y'
 use_lower = input("Include Lowercase? (y/n): ").lower() == 'y'
 use_digits = input("Include Digits? (y/n): ").lower() == 'y'
 use_symbols = input("Include Symbols? (y/n): ").lower() == 'y'
-
+if length < 4:
+    print("Password length must be at least 4 characters.")
+    exit()
 characters = ""
 
 if use_upper:
